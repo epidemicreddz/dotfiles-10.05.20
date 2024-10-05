@@ -1,0 +1,263 @@
+[
+    {
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 16,
+    "modules-left": [
+        "custom/power_btn",
+        "custom/divider",
+        //"custom/lock_screen",
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+//        "idle_inhibitor",
+        "clock"
+  //      "custom/updates"
+    ],
+    "modules-right": [
+        //"cpu",
+        //"pulseaudio",
+        //"pulseaudio#microphone",
+        //"backlight",
+        "custom/tip",
+        "tray",
+        "custom/divider",
+        "cpu",
+        //"custom/power_profile",
+        "custom/divider",
+		"custom/gpu",
+		"custom/divider",
+		        //"hyprland/language",
+        //"custom/myhyprv",
+        "custom/weather-small"
+    ],
+
+    "custom/divider": {
+        "format": "|"
+    },
+
+    "custom/tip": {
+        "format": " "
+    },
+
+    "custom/weather-small": {
+        //shows the current weather and forecast
+        "tooltip" : true,
+        "format" : "{}",
+        "interval" : 30,
+        "exec" : "~/.config/waybar/weather.py",
+        "return-type" : "json",
+        "on-click": "gnome-weather"
+    },
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "󰛐",
+            "deactivated": "󰛑"
+        },
+        "tooltip": true
+    },
+
+    "custom/power_btn": {
+		"interval": 3600,
+		"exec": "yay -Qyu | wc -l",
+        "format": "󰣇  ",
+		"format-alt": "󰇚  {} ",
+        "format-alt-click": "click-right",
+        "on-click": "sh -c '~/.config/rofi/init-pm.sh'",
+        "tooltip": false
+    },
+
+    "custom/lock_screen": {
+        "format": "",
+        "on-click": "sh -c '(sleep 0.5s; swaylock)' & disown",
+        "tooltip": false
+    },
+	
+   "clock": {
+  	"interval": 60,
+  	"tooltip": true,
+  	"format": "{:%H:%M}",
+	"format-alt": "{:%m.%d.%C >> %H:%M}",
+	"tooltip-format": "{calendar}"
+  },
+
+    "hyprland/workspaces": {
+        "format": {},
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate",
+        "persistent-workspaces": {
+
+        }
+    },
+
+    "cpu": {
+        "interval": 2,
+        "format": " {usage}%",
+        "max-length": 10,
+        "format-alt-click": "click-right",
+        "format-alt": " ",
+        "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'",
+	"states": {
+		"warning": 50,
+		"critical": 75
+	}
+    },
+
+	"custom/gpu": {
+			"interval": 2,
+			"format": "󰍜 {}%",
+			"exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits | awk '{sum += $1} END {print sum / NR}'",
+			"max-length": 10,
+			"format-alt-click": "click-right",
+			"format-alt": "󰍜",
+			"on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'",
+			"states": {
+				"warning": 50,
+				"critical": 75
+			}
+		},
+
+    "battery": {
+        "states": {
+            "good": 80,
+            "warning": 40,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt-click": "click-right",
+        "format-alt": "{icon}",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+    },
+
+    "custom/updates": {
+        "format": "{}",
+        "exec": "~/.config/HyprV/waybar/scripts/update-sys",
+        "on-click": "~/.config/HyprV/waybar/scripts/update-sys update",
+        "interval": 300,
+        "tooltip": true
+    }
+},
+
+{
+    "layer": "top",
+    "position": "bottom",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 25,
+    
+
+    "modules-left": ["custom/shades", "custom/divider", "custom/message"],
+    
+    "modules-center": ["wlr/taskbar"],
+
+    "modules-right": ["custom/spotify", "cava"],
+
+    "custom/launch_firefox": {
+        "format": "",
+        "on-click": "firefox",
+        "tooltip": false
+    },
+
+    "custom/launch_thunderbird": {
+        "format": "󰇰",
+        "on-click": "thunderbird",
+        "tooltip": false
+    },
+
+    "custom/launch_thunar": {
+        "format": "",
+        "on-click": "exec thunar",
+        "tooltip": false
+    },
+
+    "custom/launch_kitty": {
+        "format": "",
+        "on-click": "exec kitty",
+        "tooltip": false
+    },
+    
+    "custom/launch_wofi": {
+        "format": "󱗼",
+        "on-click": "sh -c '(sleep 0.5s; pkill wofi || wofi -c ~/.config/HyprV/wofi/config-lmenu)' & disown",
+        "tooltip": false
+    },
+
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 24,
+        "all-outputs": true,
+        "tooltip-format": "{name} >> {title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "ignore-list": [
+            "wofi"
+        ],
+	    "app_ids-mapping": {
+	        "steam_app_39210": "Final Fantasy 14"
+	    }
+    },
+
+    "custom/spotify": {
+        "exec": "/usr/bin/python3 /home/reddz/.config/waybar/mediaplayer.py --player spotify",
+        "format": " {} ",
+        "tooltip-format": "",
+        "return-type": "json",
+        "on-click": "playerctl play-pause --player spotify",
+        "on-scroll-up": "playerctl next --player spotify",
+        "on-scroll-down": "playerctl previous --player spotify"
+    },
+
+    "custom/shades": {
+        "format": "(⌐■_■)"
+    },
+
+    "custom/divider": {
+        "format": "|"
+    },
+
+    "cava": {
+        //       "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
+                "framerate": 30,
+                "autosens": 30,
+                "sensitivity": 1.5,
+                "bars": 20,
+                "lower_cutoff_freq": 50,
+                "higher_cutoff_freq": 10000,
+                "method": "pipewire",
+                "source": "auto",
+                "stereo": true,
+                "reverse": false,
+                "bar_delimiter": 0,
+                "monstercat": false,
+                "waves": false,
+                "noise_reduction": 0.77,
+                "input_delay": 2,
+                "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+                "actions": {
+                           "on-click-right": "mode"
+                           }
+    },
+
+    "custom/message": {
+        "format": " polytoria dev stream ",
+        "return-type": "json",
+        "on-click": "python ~/.config/waybar/reminder.py"
+    }
+    }
+]

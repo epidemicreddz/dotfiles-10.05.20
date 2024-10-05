@@ -1,0 +1,60 @@
+#!/bin/bash
+
+get_theme() {
+    THEMEIS=$(readlink -f ~/.config/waybar/style.css | cut -d '-' -f3)
+}
+
+update_theme() {
+    #set the xfce and gtk theme
+    if [[ $VER == "v4" || $VERTO == "v4-" ]]; then
+        xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Dark"
+        gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
+    else 
+        xfconf-query -c xsettings -p /Net/IconThemeName -s "Adwaita$SWITCHTO"
+        gsettings set org.gnome.desktop.interface icon-theme "Adwaita$SWITCHTO"
+    fi
+
+    xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita$SWITCHTO"
+    gsettings set org.gnome.desktop.interface gtk-theme "Adwaita$SWITCHTO"
+}
+
+get_ver() {
+    VER=$(readlink -f ~/.config/waybar/config.jsonc | cut -d '-' -f1 | cut -d '/' -f8)
+}
+
+restart_waybar() {
+    pkill waybar
+    waybar & 
+
+    get_ver   
+}
+
+set_current_background() {
+    get_theme
+    get_ver
+  }
+
+switch_version() {
+    get_theme
+    get_ver
+}
+
+switch_keyboard() {
+    hyprctl switchxkblayout $SET_KB next
+}
+
+if [[ "$1" == "vswitch" ]]; then
+    restart_waybar
+    notify-send -u normal -t 2000 -e "(⌐■_■) >> reloading"
+elif [[ "$1" == "setbg" ]]; then
+    set_current_background
+    update_theme
+    restart_waybar
+elif [[ "$1" == "swkb" ]]; then
+    switch_keyboard
+    restart_waybar
+fi
+
+# need to show the version and tooltip
+get_ver
+

@@ -1,0 +1,201 @@
+*{
+    font-family: "JetBrainsMonoNL Nerd Font";
+    font-size: 16px;
+	color: #fff;
+	padding-top: 0;
+    padding-bottom: 0;
+}
+
+window#waybar{
+    background: rgba(0,0,0,0);
+}
+
+#custom-power_btn {
+    padding: 0px 5px;
+    padding-right: 0px;
+    margin-left: 6px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgb(255, 255, 255);
+    border-right: 0px solid rgba(0, 0, 0, 0.5);
+}
+
+#custom-shades {
+    padding: 0px 5px;
+    padding-right: 9px;
+    margin-left: 6px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgb(255, 255, 255);
+    border-right: 0px solid rgba(0, 0, 0, 0.5);
+}
+
+
+
+#clock, #workspaces {
+    margin-top: 5px;
+}
+
+#custom-divider {
+    background: rgba(0,0,0,0.5);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#custom-tip {
+    padding: 0px 0px;
+    padding-left: 6px;
+    margin: 0px 0px;
+    font-size: 0px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgb(255, 255, 255);
+    border-right: 0px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px 0px 0px 10px;
+}
+
+#clock {
+    font-weight: bolder;
+    padding: 0px 6px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 6px;
+}
+
+#workspaces, #custom-message {
+    padding: 0px 0px;
+    padding-right: 4px;
+    margin: 0px 0px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgb(255, 255, 255);
+    border-left: 0px solid rgba(0, 0, 0, 0.5);
+    border-radius: 0px 10px 10px 0px;
+    font-weight: normal;
+}
+
+#workspaces button {
+    padding: 0px 0px;
+    margin: 0px 0px;
+    font-weight: normal;
+}
+
+#workspaces button.active {
+    padding: 0px 5px;
+    margin: 0px 0px;
+    background: rgba(100,100,100,0.5);
+    border-radius: 0px;
+    font-weight: bold;
+}
+
+#tray {
+    padding: 0px 5px;
+    padding-left: 6px;
+    margin: 0px 0px;
+    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.5);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#custom-weather-small {
+    padding: 0px 5px;
+    margin-right: 6px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgb(255, 255, 255);
+    border-left: 0px solid rgba(0, 0, 0, 0.5);
+}
+
+#cpu {
+    padding: 0px 5px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgb(255, 255, 255);
+    border-left: 0px solid rgba(0, 0, 0, 0.5);
+    border-right: 0px solid rgba(0, 0, 0, 0.5);
+}
+
+#custom-gpu {
+    padding: 0px 5px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgb(255, 255, 255);
+    border-left: 0px solid rgba(0, 0, 0, 0.5);
+    border-right: 0px solid rgba(0, 0, 0, 0.5);
+}
+
+#battery {
+    padding: 0px 5px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgb(255, 255, 255);
+    border-left: 0px solid rgba(0, 0, 0, 0.5);
+    border-right: 0px solid rgba(0, 0, 0, 0.5);
+}
+
+#battery.warning {
+    padding: 0px 5px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgb(255, 255, 255);
+    border-left: 0px solid rgba(0, 0, 0, 0.5);
+    border-right: 0px solid rgba(0, 0, 0, 0.5);
+    color: rgba(255, 225, 140, 1);
+}
+
+#battery.critical {
+    padding: 0px 5px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgb(255, 255, 255);
+    border-left: 0px solid rgba(0, 0, 0, 0.5);
+    border-right: 0px solid rgba(0, 0, 0, 0.5);
+    color: rgba(255, 155, 155, 1);
+}
+
+#cpu.warning {
+	color: rgba(255, 255, 140, 1)
+}
+
+#cpu.critical {
+	color: rgba(255, 155, 155, 1)
+}
+
+#taskbar {
+    margin-bottom: 2px;
+}
+
+#taskbar button{
+    background: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgba(155, 155, 155, 0);
+    border-radius: 0px;
+	padding: 1px 9px;	
+}
+
+#taskbar button.active{
+    background: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-radius: 0px;
+}
+
+#taskbar button:hover {
+    background: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(155, 155, 155, 0);
+    border-left: 1px solid rgba(155, 155, 155, 0);
+    border-right: 1px solid rgba(155, 155, 155, 0);
+    border-bottom: 1px solid rgba(155, 155, 155, 1);
+    border-radius: 0px;
+}
+
+#custom-spotify {
+    padding: 0px 2px;
+    margin-right: 6px;
+    font-size: 16px;
+    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px 0px 0px 10px;
+}
+
+#tooltip{
+    font-weight: bolder;
+    padding: 0px 6px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgb(255, 255, 255);   
+}
+
+#cava{
+    font-size: 8px;
+    padding-top: 17px;
+}
