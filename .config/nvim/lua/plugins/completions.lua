@@ -3,6 +3,7 @@ return {
     "hrsh7th/cmp-nvim-lsp"
   },
 
+
   {
     "L3MON4D3/LuaSnip",
     dependencies = {
@@ -53,5 +54,8 @@ return {
 			auto_open = true,
 		});
 	end,
-  }
+  },
+
+	{'hrsh7th/nvim-cmp'},
+  {'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'},
 }

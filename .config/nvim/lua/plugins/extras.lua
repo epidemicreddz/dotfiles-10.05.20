@@ -1,6 +1,11 @@
 return {
 	{'eandrju/cellular-automaton.nvim'},
 
+	{
+	  'AckslD/muren.nvim',
+	  config = true,
+	},
+
 	-- \b(TODO):
   	{"folke/todo-comments.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },

@@ -1,0 +1,476 @@
+* {
+    font-family: jetbrains mono !important;
+}
+
+::placeholder {
+    font-family: jetbrains mono !important;
+}
+
+.sidebar_a4d4d9:hover {
+    transition: width 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 240px;    
+}
+
+
+.sidebar_a4d4d9:not(:hover) {
+    transition: width 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 60px;    
+}
+
+span[class="timestamp_f9f2ca timestampInline_f9f2ca"] {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+div[class="auto_c49869 scrollerBase_c49869 customTheme_c49869 chatContent_a7d72e shc-lock-screen-outer-container"] {
+    text-transform: lowercase;
+}
+
+.textBadge_df8943 {
+    text-transform: lowercase;
+    padding: 2px;
+    font-style: italic;
+}
+
+div[class="divider_d5deea hasContent_d5deea divider_c2654d hasContent_c2654d"] {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+div[class="nameTag_b2ca13 canCopy_b2ca13"] {
+    margin-left: 4px;
+}
+
+.menuItemLabel_ad5fac {
+    text-transform: lowercase;
+}
+
+.avatarWrapper_b2ca13 {
+    margin-left: 6px;
+}
+
+div[class="flex_dc333f horizontal_dc333f justifyStart_ec1a20 alignStretch_ec1a20 noWrap_ec1a20 buttons_b2ca13"]:not(:hover) {
+    width: 0px;
+    opacity: 0;
+}
+
+div[class="flex_dc333f horizontal_dc333f justifyStart_ec1a20 alignStretch_ec1a20 noWrap_ec1a20 buttons_b2ca13"]:hover {
+    transition: opacity 200ms ease-out;
+    width: 400px;
+    opacity: 1;
+}
+
+.hoverRoll_e07331 {
+    text-transform: upe;
+    font-style: italic !important;
+}
+
+.navList_af5dbb {
+    text-transform: lowercase;
+}
+
+.scroller_d90b3d, 
+.scroller_d90b3d * {
+    text-transform: lowercase !important;
+}
+
+.layerContainer_cd0de5 {
+    text-transform: lowercase;
+}
+
+.placeholder_a552a6 {
+    text-transform: lowercase;
+}
+
+.buttons_d0696b:hover {
+    transition: width 300ms ease-out;
+    width: 200px;
+}
+
+input[class=input_effbe2] {
+    text-transform: lowercase;
+}
+
+div[class="text-xs/semibold_dc00ef"] {
+    display: none;
+}
+
+svg[class="icon_d8bfb3 shc-hidden-channel-icon"] {
+    display: none;
+}
+
+div[class='eyebrow_dc00ef headerText_a0'] {
+    text-transform: lowercase !important;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.premiumLabel_ae3c77 {
+    text-transform: lowercase !important;
+}
+
+div[class=class="premiumTab_c10c74 item_a0 selected_a0 themed_a0"] {
+    text-transform: lowercase;
+}
+
+div[class='premiumLabel_ae3c77 selected_ae3c77'] {
+    text-transform: lowercase;
+}
+
+div[class='item_a0 themed_a0'] {
+    text-transform: lowercase;
+}
+
+div[data-list-item-id="channels___boosts-1264429948970733782"] {
+    display: none;
+}
+
+li[class=containerDefault_f6f816] {
+    margin-left: 10px;
+}
+
+.basicChannelRowLink_d8bfb3 {
+    margin-left: 10px;
+}
+
+.link_d8bfb3 {
+    text-transform: lowercase;
+}
+
+a[href="/channels/1264429948970733782/1264430590527012924"] {
+    margin-left: 10px;
+}
+
+.buttons_d0696b:not(:hover) {
+    transition: width 200ms ease-out;
+    width: 40px;
+}
+
+.subText_ec8679 {
+    text-transform: lowercase;
+    font-style: italic;
+    font-weight: bold !important;
+}
+
+
+.search_ff5f90 {
+    text-indent: 1000%;
+}
+
+div[id="profile-customization-tab"] > div[class^="container_"]
+{
+    display:none;
+}
+
+[class^="nitroTextAndBadge_"], button:has([class^="premiumIcon_"]),
+[class^="emojiSection_"] [class^="flex_"] div[class*="text-sm-normal"]
+{
+    display:none;
+}
+
+button[aria-label="Send a gift"]
+{
+    display: none;
+}
+
+[class^="channelAppLauncher_"]
+{
+    display:none;
+}
+
+
+li div a[href="/shop"],
+li div a[href="/store"]
+{
+  display: none;
+}
+
+#vc-friendcount {
+    text-transform: lowercase !important;
+}
+
+.searchBarComponent_f0963d {
+    text-indent: 150%;
+    color: transparent;
+    position: relative;
+}
+
+.searchBarComponent_f0963d::after {
+    text-indent: 0%;
+    content: "search...";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-transform: lowercase;
+    transform: translate(-50%, -50%);
+
+}
+
+.subtitleContainer_a7d72e:hover {
+    transition: margin-top 200ms cubic-bezier(0.165, 0.84, 0.44, 1); 
+    margin-top: 10px;
+}
+
+.subtitleContainer_a7d72e:not(:hover) {
+     transition: margin-top 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin-top: 0px;
+}
+
+div[aria-label="Help"] {
+    display: none;
+}
+
+div[class="searchBar_a46bef"]:not(:hover) {
+    width: 24px
+}
+
+h2[class="defaultColor_a595eb lineClamp1_a595eb text-md/semibold_dc00ef defaultColor_e42ec6 name_fd6364"] {
+    text-transform: lowercase;
+}
+
+.title_ed1d57 {
+    text-transform: lowercase;
+}
+
+::placeholder {
+    text-transform: lowercase;
+    font-family: JetBrains Mono;
+    opacity: 0.5;
+}
+
+h2[class="h2_c46f6a title_c46f6a defaultColor_c46f6a defaultMarginh2_c46f6a"] {
+    text-transform: lowercase;
+}
+
+div[class="toggleExpandSection_d8e2d0"] {
+    text-transform: lowercase;
+}
+
+.header_e3c1c6 {
+    text-transform: lowercase;
+}
+
+div[class="text-sm/bold_dc00ef pro_b5053a"]{
+    text-transform: lowercase;
+    text-decoration: underline;
+}
+
+.keybind_df5532 {
+    text-transform: lowercase;
+}
+
+div[class="info_c5a741"] {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.searchInput_f6639d {
+    text-transform: lowercase;
+}
+
+.premiumBackground_c6d722 {
+    display: none;
+    right: 0px;
+}
+
+.description_b89ec7 {
+    text-transform: lowercase;
+}
+
+.sectionDescription_b3a5c2 {
+    text-transform: lowercase;
+}
+
+div[data-text-variant="eyebrow"] {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.eyebrow_c46f6a {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+h3[class="h5_c46f6a eyebrow_c46f6a isEnabled_ad4a7c marginBottom20_f7730b"] {
+    text-transform: lowercase;
+    font-style: italic;
+
+
+}
+
+h3[class="name_a08117 container_a5ad5c text_a5ad5c"] {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+
+@keyframes scroll-left {
+  0% { transform: translateX(200%); }
+  100% { transform: translateX(-200%); }
+}
+
+div[id="vc-spotify-song-title"] {
+    overflow: visible;
+      /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: scroll-left 15s linear infinite;
+  -webkit-animation: scroll-left 15s linear infinite;
+  animation: scroll-left 15s linear infinite;
+
+  
+}
+
+div[class="colorStandard_d1aa77 size14_e8b2ab default_b89ec7 formText_b89ec7 vc-spotify-progress-time vc-spotify-time-left modeDefault_b89ec7"] {
+    background-color: black;
+    z-index: 1;
+    padding-right: 10px;
+}
+
+div[id="vc-spotify-player"] {
+    text-transform: lowercase;
+    background-color: inherit !important;
+}
+
+button {
+    text-transform: lowercase;
+}
+
+div[class='eyebrow_dc00ef marginBottom8_f7730b'] {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+div[class="contentColumn_c25c6d contentColumnDefault_c25c6d"] {
+    text-transform: lowercase;
+}
+
+h2[class="defaultColor_a595eb heading-lg/semibold_dc00ef defaultColor_e42ec6"] {
+    text-transform: lowercase;
+}
+
+h2[class="h1_c46f6a title_c46f6a defaultColor_c46f6a defaultMarginh1_c46f6a"] {
+    text-transform: lowercase;
+}
+
+div[class='text-md/normal_dc00ef'] {
+    text-transform: lowercase ;
+    font-style: italic;
+}
+
+.socialLinks_c44e94{
+    display: none;
+}
+
+.item_a0:hover {
+    transition: margin-left 100ms ease-out;
+    margin-left: 5px;
+        text-transform: lowercase;
+}
+
+.selected_a0 {
+        transition: margin-left 300ms ease-out;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.item_a0:not(:hover) {
+    transition: margin-left 300ms ease-out;
+    text-transform: lowercase;
+}
+
+li div a[href='/message-requests'] {
+    text-transform: lowercase;
+}
+
+.headings_ba4d80 {
+    text-transform: lowercase;
+}
+
+div[class='contents_dd4f85 buttonInner_f9d37d'] {
+    text-transform: lowercase;
+}
+
+header[class="header_ae1fa2"] {
+    text-transform: lowercase;
+}
+
+span[class=headerText_c47fa9] {
+    text-transform: lowercase;
+}
+
+[class^="profileEffects"]
+{
+    display: none;
+}
+
+svg[class^="avatarDecoration"], 
+img[class^="avatarDecoration"],
+[class*="bannerSVGWrapper_"] > mask > image
+{
+    display: none;
+}
+[class*=avatarDecorationHint_] > foreignObject
+{
+  width: 80px;
+  height: 80px;
+  mask: url(#svg-mask-avatar-status-round-80);
+}
+[class*=avatarDecorationHint_]
+{
+  top: -80px;
+  left: 0px;
+  position: relative;
+}
+
+div[class*=nameAndDecorators] div[role="button"]:has(svg[aria-label^="Server boosting since"]),
+div[class*=nameAndDecorators] div[role="button"]:has(svg[aria-label^="Server Boosting since"])
+{
+    pointer-events: none;
+}
+
+div[class^=body_] > span[class^="clickable_"] [role="button"],
+span[class*="clanTagChiplet_"],
+span[class*="clanTag_"]
+{
+    display: none;
+}
+
+div[class*=overlayBackground_]:has(button[class*=getNitroButton_])
+{
+    display: none;
+};
+
+div[class*=characterCount_] div[class*=iconOnly_]:has(svg[class*=premium_])
+{
+    display: none;
+}
+
+ul[data-list-id='guildsnav'] > div[class^=footer]
+{
+  display: none;
+}
+div[class*=unreadMentionsFixedFooter]
+{
+  bottom: 0px;
+}
+
+div[class^="effectsWrapper"]
+{
+    display: none;
+} 
+img.emoji
+{
+    opacity: 100;
+}
+div[class*="shakeReaction"]
+{
+    animation: none !important;
+}
+
+.friendsButtonContainer_f0963d {
+    text-transform: lowercase;
+}
+

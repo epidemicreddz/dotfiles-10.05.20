@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+
+
 import json
 import requests
 from datetime import datetime
@@ -56,7 +58,6 @@ WEATHER_CODES = {
 }
 
 data = {}
-
 
 weather = requests.get("https://wttr.in/?format=j1").json()
 

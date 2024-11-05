@@ -7,3 +7,5 @@ vim.o.cursorline = true
 vim.opt.showmode = false
 vim.cmd([[autocmd FileType * set formatoptions-=ro]])
 vim.api.nvim_set_hl(0, 'Comment', { italic=true }) -- awesome
+vim.cmd("set noexpandtab")
+vim.cmd("set autoindent")

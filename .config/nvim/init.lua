@@ -18,13 +18,23 @@ vim.opt.rtp:prepend(lazypath)
 require("vim-options")
 require("lazy").setup("plugins")
 require('lazy.view.config').keys.close = '<Esc>'
+require("lazy").setup({
+	ignore = {
+		'nvimtools/hydra.nvim'
+	}
+})
+
+vim.opt.ww:append("<,>")
 
 vim.keymap.set('n', '<leader>a',  ':lua require("activate").list_plugins()<CR>')
 vim.keymap.set('n', '<leader>l',  ':Lazy<CR>')
+vim.keymap.set('n', '<leader>r',  ':MurenToggle<CR>')
+
+vim.keymap.set('n', '<leader>f', ':Neotree close<CR>:Alpha<CR>')
 
 vim.keymap.set('n', '<A-0>', ':blast<CR>', {})
-vim.keymap.set('n', '<A-n>', ':bn<CR>', {})
-vim.keymap.set('n', '<A-b>', ':bp<CR>', {})
+vim.keymap.set('n', '<A-b>', ':bn<CR>', {})
+vim.keymap.set('n', '<A-n>', ':bp<CR>', {})
 vim.keymap.set('n', '<A-c>', ':bd<CR>', {})
 
 local isLspDiagnosticsVisible = true
