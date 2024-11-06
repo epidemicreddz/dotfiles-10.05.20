@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/etc/sudoers.d'
+let g:netrw_dirhist_6='/home/reddz/.local/share/PrismLauncher/iconthemes'
+let g:netrw_dirhist_5='/home/reddz/.local/share/keyrings'
+let g:netrw_dirhist_4='/home/reddz/.gnupg/public-keys.d'
+let g:netrw_dirhist_3='/usr/share/applications'
+let g:netrw_dirhist_2='/etc/xdg/swaync'
+let g:netrw_dirhist_1='/usr/share/applications'
